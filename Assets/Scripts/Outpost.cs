@@ -39,6 +39,7 @@ public class Outpost : MonoBehaviour
                 if (timer >= scoreInterval)
                 {
                     timer = 0;
+                    ScoreManager.Instance.scores[team]++;
                 }
             }
         }
